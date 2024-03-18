@@ -1,6 +1,8 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'plans';
+@use 'watch-anywhere';
 
 @font-face{
     font-family: Avenir;
@@ -55,7 +57,7 @@ body {
     text-decoration: underline;
 }
 
-.tilte--big {
+.title--big {
     @include title(44px);
 }
 
@@ -65,4 +67,17 @@ body {
 
 .title--small {
     @include title(24px);
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextSecundario;
+    background-color: #6421ff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
 }
